@@ -62,7 +62,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
     _initializeVideoPlayerFuture = _controller.initialize().then((_) {
       setState(() {});
       _controller.setLooping(true);
-      _controller.setVolume(0); // Mute the video
+      _controller.setVolume(0); 
       _controller.play();
     });
   }
